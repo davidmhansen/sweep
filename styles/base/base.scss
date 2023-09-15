@@ -1,0 +1,29 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: calc(100vw / 1920 * 10);
+}
+
+body {
+
+    background-color: $color-mine-shaft;
+
+    @include media('<phone') {
+        font-size: 100px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        -webkit-filter: blur(1.5px);
+      filter: blur(1.5px);
+    }
+}

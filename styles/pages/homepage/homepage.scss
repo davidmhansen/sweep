@@ -1,0 +1,24 @@
+.homepage {
+    @extend %cover;
+}
+
+.homepage__title {
+    @extend %title-63;
+
+    width: 114.8rem;
+    line-height: 1.2;
+    letter-spacing: 0.06rem;
+    position: absolute;
+    left: 1rem;
+    top: 17.6rem;
+}
+
+.homepage__image {
+    background-image: url('../../../public/stage.jpg');
+    background-size: cover;
+    width: 46.4rem;
+    height: 58rem;
+    position: absolute;
+    bottom: 10rem;
+    left: 116.4rem;
+}
