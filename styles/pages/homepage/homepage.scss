@@ -11,6 +11,12 @@
     position: absolute;
     left: 1rem;
     top: 17.6rem;
+
+    @include media('<phone') {
+        font-size: 18rem;
+        line-height: 1;
+        z-index: 999;
+    }
 }
 
 .homepage__image {
@@ -21,4 +27,13 @@
     position: absolute;
     bottom: 10rem;
     left: 116.4rem;
+
+    @include media('<phone') {
+        width: 146.4rem;
+        height: 220rem;
+        position: absolute;
+        bottom: 10rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
