@@ -10,7 +10,7 @@ html {
 
 body {
 
-    background-color: $color-mine-shaft;
+    background-color: $color-cod-gray;
     color: white;
     @include media('<phone') {
         font-size: 100px;
