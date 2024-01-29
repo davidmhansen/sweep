@@ -1,0 +1,16 @@
+.navigation__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.4rem 0;
+    font-family: $font-neue-montreal;
+
+    .navigation__logo {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .navigation__menu {
+        font-size: 1.8rem;
+    }
+}

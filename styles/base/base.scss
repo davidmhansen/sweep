@@ -5,16 +5,16 @@
 }
 
 html {
-    font-size: calc(100vw / 1920 * 10);
+    font-size: calc(100vw / 1440 * 10);
 }
 
 body {
 
-    background-color: $color-cod-gray;
-    color: white;
+    color: $color-cod-gray;
     @include media('<phone') {
-        font-size: 100px;
+        font-size: 100rem;
     }
+    padding: 0 2.4rem 0;
 }
 
 a {

@@ -1,39 +1,17 @@
 .homepage {
-    @extend %cover;
-}
 
-.homepage__title {
-    @extend %title-63;
-
-    width: 114.8rem;
-    line-height: 1.2;
-    letter-spacing: 0.06rem;
-    position: absolute;
-    left: 1rem;
-    top: 17.6rem;
-
-    @include media('<phone') {
-        font-size: 18rem;
-        line-height: 1;
-        z-index: 999;
+    header {
+        padding: 6.4rem 0
     }
-}
 
-.homepage__image {
-    background-image: url('../../../public/stage.jpg');
-    background-size: cover;
-    width: 46.4rem;
-    height: 58rem;
-    position: absolute;
-    bottom: 10rem;
-    left: 116.4rem;
+    .homepage__title {
+        @extend %title-148;
 
-    @include media('<phone') {
-        width: 146.4rem;
-        height: 220rem;
-        position: absolute;
-        bottom: 10rem;
-        left: 50%;
-        transform: translateX(-50%);
+    }
+
+    .homepage__subtitle {
+        @extend %subtitle-18;
+        max-width: 50vw;
+        margin-bottom: 9.6rem;
     }
 }
