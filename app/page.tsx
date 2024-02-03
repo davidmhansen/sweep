@@ -115,6 +115,7 @@ export default function Home() {
             alt="Picture of the author"
             style={{ width: "100%", height: "auto" }}
           />
+          <span className="homepage__cta-copy">OUR WORKS</span>
         </div>
       </section>
     </div>

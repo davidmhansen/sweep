@@ -3,6 +3,11 @@
     header {
         padding-top: 6.4rem;
         margin-bottom: 12.8rem;
+
+        @include media ('<phone') {
+            padding-top: 1.6rem;
+            margin-bottom: 6.4rem;
+        }
         
         .homepage__title {
             @extend %title-148;
@@ -13,6 +18,13 @@
             @extend %subtitle-18;
             max-width: 50vw;
             margin-bottom: 9.6rem;
+
+            @include media ('<phone') {
+                font-size: 1.8rem;
+                line-height: 2.16rem;
+                max-width: 100vh;
+                margin-bottom: 2.4rem;
+            }
         }
     }
 
@@ -75,6 +87,18 @@
 
     .homepage__cta--bottom {
         margin-bottom: 12.8rem;
+        position: relative;
+
+        .homepage__cta-copy {
+            cursor: default;
+            text-align: center;
+            @extend %title-148;
+            color: white;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
     }
 
 }

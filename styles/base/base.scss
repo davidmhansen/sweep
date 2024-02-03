@@ -6,15 +6,20 @@
 
 html {
     font-size: calc(100vw / 1440 * 10);
+
+    @include media ('<phone') {
+        font-size: calc(100vw / 375 * 10);
+    }
 }
 
 body {
     font-family: $font-neue-montreal;
     color: $color-cod-gray;
-    // @include media('<phone') {
-    //     font-size: 100rem;
-    // }
     padding: 0 2.4rem 0;
+
+    @include media ('<phone') {
+        padding: 0 1.6rem 0;
+    }
 }
 
 a {
