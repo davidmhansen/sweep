@@ -9,21 +9,15 @@ html {
 }
 
 body {
-
+    font-family: $font-neue-montreal;
     color: $color-cod-gray;
-    @include media('<phone') {
-        font-size: 100rem;
-    }
+    // @include media('<phone') {
+    //     font-size: 100rem;
+    // }
     padding: 0 2.4rem 0;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-    transition: all 0.2s ease-in-out;
-
-    &:hover {
-        -webkit-filter: blur(1.5px);
-      filter: blur(1.5px);
-    }
 }

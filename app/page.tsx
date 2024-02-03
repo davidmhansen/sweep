@@ -22,19 +22,21 @@ export default function Home() {
           />
         </div>
       </header>
-      <section>
-        <div>
-          <h2>We do what we love</h2>
-          <p>
-            We are convinced that things will only be good if you love what you
-            do. Passion is the key - expertise is the way. With a track record
-            of successfully executing a myriad of digital, virtual, hybrid and
-            live projects, we have built strong relationships with renowned
-            customer and a unique network with like-minded people.
-          </p>
-          <div>
-            <h3>What we offer</h3>
-            <p>
+      <section className="homepage__section--1">
+        <div className="homepage__section-wrapper">
+          <div className="homepage__section">
+            <h2 className="homepage__section-title">We do what we love</h2>
+            <p className="homepage__section-copy">
+              We are convinced that things will only be good if you love what
+              you do. Passion is the key - expertise is the way. With a track
+              record of successfully executing a myriad of digital, virtual,
+              hybrid and live projects, we have built strong relationships with
+              renowned customer and a unique network with like-minded people.
+            </p>
+          </div>
+          <div className="homepage__content">
+            <h3 className="homepage__content-title">What we offer</h3>
+            <p className="homepage__content-copy">
               At sweeppeople, we excel at transforming a product or brand's
               message into an immersive experience that sparks inspiration and
               cultivates genuine, long-lasting connections with customers. Armed
@@ -45,10 +47,14 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div>
-          <img
-            src="../public/images/stage.jpg"
-            alt="stage concept at back 2 the woods 2023"
+        <div className="homepage__section-image--wrapper">
+          <Image
+            src="/images/stage.jpg"
+            width={0}
+            height={0}
+            sizes="100vw"
+            alt="Picture of the author"
+            style={{ width: "100%", height: "auto" }}
           />
         </div>
       </section>
@@ -77,7 +83,14 @@ export default function Home() {
       </section>
       <section>
         <div>
-          <img src="../public/images/homepage-hollistic-approach.jpg" alt="" />
+          <Image
+            src="/images/homepage-hollistic-approach.jpg"
+            width={0}
+            height={0}
+            sizes="100vw"
+            alt="Picture of the author"
+            style={{ width: "100%", height: "auto" }}
+          />
         </div>
         <div>
           <h2>In the end, it´s the smile.</h2>
@@ -93,8 +106,15 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div>
-          <img src="../public/images/our-works-cta.jpg" alt="" />
+        <div className="homepage__cta--bottom">
+          <Image
+            src="/images/our-works-cta.jpg"
+            width={0}
+            height={0}
+            sizes="100vw"
+            alt="Picture of the author"
+            style={{ width: "100%", height: "auto" }}
+          />
         </div>
       </section>
     </div>

@@ -1,17 +1,80 @@
 .homepage {
 
     header {
-        padding: 6.4rem 0
+        padding-top: 6.4rem;
+        margin-bottom: 12.8rem;
+        
+        .homepage__title {
+            @extend %title-148;
+    
+        }
+
+        .homepage__subtitle {
+            @extend %subtitle-18;
+            max-width: 50vw;
+            margin-bottom: 9.6rem;
+        }
     }
 
-    .homepage__title {
-        @extend %title-148;
+    .homepage__section--1 {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 14.2rem;
 
+        .homepage__section-wrapper {
+
+            display: flex;
+            flex-direction: column;
+            gap: 12.8rem;
+            width: 56.6rem;
+
+            .homepage__section {
+                display: flex;
+                flex-direction: column;
+                gap: 3.2rem;
+
+                .homepage__section-title {
+                    @extend %title-64;
+    
+                }
+    
+                .homepage__section-copy {
+                    @extend %paragraph-16;
+                    line-height: 2rem;
+                    color: $color-light-gray;
+                }
+            }
+
+        }
+        .homepage__content {
+
+            display: flex;
+            flex: row;
+            gap: 14rem;
+
+            .homepage__content-title {
+                width: 96rem;
+                @extend %paragraph-16;
+
+            }
+
+            .homepage__content-copy {
+                @extend %paragraph-16;
+                line-height: 2rem;
+            color: $color-light-gray;
+            }
+        }
     }
 
-    .homepage__subtitle {
-        @extend %subtitle-18;
-        max-width: 50vw;
-        margin-bottom: 9.6rem;
+    .homepage__section-image--wrapper {
+        width: 56.6rem;
     }
+
+    .homepage__cta--bottom {
+        margin-bottom: 12.8rem;
+    }
+
 }

@@ -1,0 +1,13 @@
+.about {
+
+    .about__copy {
+        @extend %title-64;
+        line-height: 115%;
+        margin-bottom: 6.4rem;
+        width: 115.4rem;
+    }
+
+    .about__img-wrapper {
+        margin-bottom: 19.2rem;
+    }
+}

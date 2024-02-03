@@ -6,8 +6,12 @@
 @import './base/base';
 @import './base/fonts';
 
+@import './shared/paragraphs';
 @import './shared/titles';
 
 @import './components/navigation';
+@import './components/header';
+@import './components/footer';
 
 @import './pages/homepage/homepage';
+@import './pages/about/about';

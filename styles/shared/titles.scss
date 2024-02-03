@@ -8,9 +8,31 @@
     font-weight: 500;
 }
 
+%title-64 {
+    font-family: $font-neue-montreal;
+    font-size: 6.4rem;
+    line-height: 1;
+    font-weight: 500;
+}
+
+%title-40 {
+    font-family: $font-neue-montreal;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 500;
+}
+
+%title-32 {
+    font-family: $font-neue-montreal;
+    font-size: 3.2rem;
+    line-height: 3.68rem;
+    font-weight: 500;
+}
+
 %subtitle-18 {
     font-family: $font-neue-montreal;
     font-size: 1.8rem;
     text-transform: uppercase;
     line-height: 2.16rem;
+    font-weight: 500;
 }

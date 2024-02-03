@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer>
@@ -22,17 +24,17 @@ export default function Footer() {
             <span className="footer__links-title">Sitemap</span>
             <ul className="footer__links-list">
               <li className="footer__links-list--item">
-                <a href="#">Home</a>
+                <Link href="/">Home</Link>
               </li>
               <li className="footer__links-list--item">
-                <a href="#">Service</a>
+                <Link href="/service">Service</Link>
               </li>
               {/* <li className="footer__links-list--item"><a href="#">Projects</a></li> */}
               <li className="footer__links-list--item">
-                <a href="#">About</a>
+                <a href="/about">About</a>
               </li>
               <li className="footer__links-list--item">
-                <a href="#">Contact</a>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </div>
@@ -55,6 +57,12 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+        </div>
+        <div className="footer__company-wrapper">
+          <span className="footer__company-logo">Sweeppeople</span>
+          <p className="footer__company-copyright">
+            Copyright @ sweeppeople // 2024
+          </p>
         </div>
       </div>
     </footer>

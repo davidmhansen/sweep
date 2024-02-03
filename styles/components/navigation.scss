@@ -11,6 +11,6 @@
     }
 
     .navigation__menu {
-        font-size: 1.8rem;
+        @extend %paragraph-18;
     }
 }
