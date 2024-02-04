@@ -33,7 +33,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         padding-left: 14.2rem;
 
         .homepage__section-wrapper {
@@ -49,13 +49,13 @@
                 gap: 3.2rem;
 
                 .homepage__section-title {
-                    @extend %title-64;
-    
+                    @extend %title-32;
+                    text-transform: uppercase;
                 }
     
                 .homepage__section-copy {
                     @extend %paragraph-16;
-                    line-height: 2rem;
+                    line-height: 2.25rem;
                     color: $color-light-gray;
                 }
             }
@@ -75,14 +75,68 @@
 
             .homepage__content-copy {
                 @extend %paragraph-16;
-                line-height: 2rem;
-            color: $color-light-gray;
+                line-height: 2.25rem;
+                color: $color-light-gray;
             }
         }
     }
 
     .homepage__section-image--wrapper {
         width: 56.6rem;
+        margin-bottom: 12.4rem;
+    }
+
+    .homepage__section--2 {
+
+        margin-bottom: 12.8rem;
+
+        .homepage__section-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 3.2rem;
+            padding: 0 26rem;
+
+            .homepage__section-title {
+                @extend %title-32;
+                text-transform: uppercase;
+
+            }
+
+            .homepage__section-content {
+
+                display: flex;
+                justify-content: space-between;
+
+                .content__title {
+
+                    @extend %paragraph-16;
+                }
+
+                .copy__wrapper {
+
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3.2rem;
+                    width: 56.6rem;
+
+                    .subtitle {
+                        @extend %paragraph-16;
+
+                    }
+
+                    .copy {
+                        @extend %paragraph-16;
+                        line-height: 2.25rem;
+                        color: $color-light-gray;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .homepage__image--align-left {
+        padding-right: 26rem;
     }
 
     .homepage__cta--bottom {

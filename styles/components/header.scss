@@ -1,6 +1,10 @@
 .header {
 
     padding: 3.2rem 0 8rem 0;
+
+    @include media ('<phone') {
+        padding: 3.2rem 0;
+    }
     .header__heading {
         @extend %title-148;
     }

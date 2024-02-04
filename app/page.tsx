@@ -58,14 +58,18 @@ export default function Home() {
           />
         </div>
       </section>
-      <section>
-        <div>
-          <h2>We always pay attention to the detail.</h2>
-          <div>
-            <span>Hollistic approach</span>
-            <div>
-              <h3>Transforming brands into dynamic experiences</h3>
-              <p>
+      <section className="homepage__section--2">
+        <div className="homepage__section-wrapper">
+          <h2 className="homepage__section-title">
+            We always pay attention to the detail.
+          </h2>
+          <div className="homepage__section-content">
+            <span className="content__title">Hollistic approach</span>
+            <div className="copy__wrapper">
+              <h3 className="subtitle">
+                Transforming brands into dynamic experiences
+              </h3>
+              <p className="copy">
                 Comprising a team of seasoned professionals skilled in
                 communication, event and media production, marketing, interior
                 design, project management and certified steel/wood construction
@@ -82,7 +86,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div>
+        <div className="homepage__image--align-left">
           <Image
             src="/images/homepage-hollistic-approach.jpg"
             width={0}

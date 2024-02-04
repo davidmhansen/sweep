@@ -1,5 +1,9 @@
 .footer {
 
+    @include media ('<phone') {
+        padding-bottom: 2.4rem;
+    }
+
     .footer__contact {
         padding: 2.4rem 0 4.8rem 0;
         display: flex;
