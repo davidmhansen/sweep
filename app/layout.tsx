@@ -1,13 +1,9 @@
 import "../styles/main.scss";
-import type { Metadata } from "next";
 
-import Navigation from "./components/Navigation/Navigation";
+import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-
-export const metadata: Metadata = {
-  title: "sweeppeople -- munich / wor",
-  description: "site under construction",
-};
+import SmoothScroll from "./components/SmoothScroll/SmoothScroll";
+import Cursor from "./components/StickyCursor/StickyCursor";
 
 export default function RootLayout({
   children,
@@ -17,9 +13,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navigation></Navigation>
-        {children}
-        <Footer></Footer>
+        <SmoothScroll>
+          <Header></Header>
+          {children}
+          <Footer></Footer>
+          {/* <Cursor></Cursor> */}
+        </SmoothScroll>
       </body>
     </html>
   );

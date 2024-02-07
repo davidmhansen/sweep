@@ -49,6 +49,7 @@
 
     .footer__links {
         display: flex;
+        flex-wrap: wrap;
         gap: 8rem;
         margin-bottom: 8rem;
 

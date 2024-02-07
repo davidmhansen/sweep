@@ -1,0 +1,31 @@
+.nav{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: white;
+    margin-top: 6.6rem;
+    padding-left: 2.4rem;
+ }
+ 
+ .wrapper{
+     display: flex;
+     gap: 50px;
+     margin-bottom: 80px;
+ }
+ 
+ .container{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+ 
+ @media only screen and (min-width: 1000px) {
+    
+     .wrapper{
+         margin-bottom: 0px;
+         justify-content: space-between;
+     }
+ }

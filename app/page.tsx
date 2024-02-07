@@ -1,11 +1,17 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "sweeppeople -- homepage",
+  description: "site under construction",
+};
 
 export default function Home() {
   return (
     <div className="homepage">
       <header>
         <h1 className="homepage__title">
-          Human Stories.<br></br>Superhuman events.
+          Human Stories.<br></br>Superhuman brands.
         </h1>
         <p className="homepage__subtitle">
           We are an audio / visual creative agency, specialising in brand
@@ -25,7 +31,9 @@ export default function Home() {
       <section className="homepage__section--1">
         <div className="homepage__section-wrapper">
           <div className="homepage__section">
-            <h2 className="homepage__section-title">We do what we love</h2>
+            <h2 className="homepage__section-title">
+              As a digital branding agency, we do what we love with passion.
+            </h2>
             <p className="homepage__section-copy">
               We are convinced that things will only be good if you love what
               you do. Passion is the key - expertise is the way. With a track
@@ -61,7 +69,7 @@ export default function Home() {
       <section className="homepage__section--2">
         <div className="homepage__section-wrapper">
           <h2 className="homepage__section-title">
-            We always pay attention to the detail.
+            It's important to us to always pay attention to the detail.
           </h2>
           <div className="homepage__section-content">
             <span className="content__title">Hollistic approach</span>
@@ -96,12 +104,16 @@ export default function Home() {
             style={{ width: "100%", height: "auto" }}
           />
         </div>
-        <div>
-          <h2>In the end, it´s the smile.</h2>
-          <p>
+        <div className="section-3--wrapper">
+          <h2 className="section-3__title">
+            It is our goal to deliver the perfect solution for you and in the
+            end, it's all about the smile.
+          </h2>
+          <p className="section-3__copy">
             By orchestrating unique and unforgettable experiences, we ensure
-            that your concerns become a true work of art. We’re not just in the
-            agency business, we’re in the business of making people smile.
+            that your concerns become a true work of art. We're not just in the
+            agency business, we're in the business of making people smile.
+            <br />
             Whether through a project, an event, produced content for your
             brand, a meeting with us, a website, sound / light / visual concepts
             or installations, a designed product or something else we have

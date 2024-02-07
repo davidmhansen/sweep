@@ -57,6 +57,17 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+          <div className="footer__links-wrapper">
+            <span className="footer__links-title">Legal</span>
+            <ul className="footer__links-list">
+              <li className="footer__links-list--item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li className="footer__links-list--item">
+                <a href="#">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="footer__company-wrapper">
           <span className="footer__company-logo">Sweeppeople</span>

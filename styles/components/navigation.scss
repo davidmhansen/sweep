@@ -14,3 +14,101 @@
         @extend %paragraph-18;
     }
 }
+
+.label {
+    @extend %paragraph-18;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
+
+
+.label p:nth-of-type(2) {
+
+    position: absolute;
+
+}
+
+
+
+.label p:nth-of-type(2) {
+
+    opacity: 0;
+
+}
+
+.burger{
+
+    width: 2.25rem;
+
+    position: relative;
+
+    pointer-events: none;
+
+}
+
+.el {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: .6rem;
+
+    cursor: pointer;
+}
+
+
+
+.burger::after, .burger::before{
+
+    content: "";
+
+    height: .15rem;
+
+    width: 100%;
+
+    background-color: black;
+
+    position: relative;
+
+    display: block;
+
+    transition: all 1s cubic-bezier(0.76, 0, 0.24, 1);
+
+}
+
+.burger::after{
+
+    top: -.3rem;
+
+}
+
+.burger::before{
+
+    top: .3rem;
+
+}
+
+
+.burgerActive::after{
+
+    transform: rotate(45deg);
+
+    top: -1px;
+
+}
+
+
+
+.burgerActive::before{
+
+    transform: rotate(-45deg);
+
+    top: 1px;
+
+}

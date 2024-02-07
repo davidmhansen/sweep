@@ -1,0 +1,51 @@
+@import '../../../../../styles/utils/variables.scss';
+
+@mixin title-148 {
+    // Define the styles you want to reuse in the mixin
+    font-family: $font-neue-montreal;
+    font-size: 14.8rem;
+    letter-spacing: -.25rem;
+    line-height: 13.2rem;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+    font-weight: 500;
+
+    @media (max-width: 767px) {
+        font-size: 4.8rem;
+        line-height: 4.32rem;
+        letter-spacing: -.125rem;
+        margin-bottom: 1.6rem;
+    }
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
+.body a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.body p{
+
+    @include title-148;
+    margin: 0px;
+    display: flex;
+    overflow: hidden;
+}
+
+// @media only screen and (min-width: 1000px) {
+   
+//     .body{
+//         max-width: 1200px;
+//         margin-top: 80px;
+//     }
+//     .body p{
+//         font-size: 5vw;
+//         padding-right: 2vw;
+//     }
+// }

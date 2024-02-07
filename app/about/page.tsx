@@ -1,5 +1,12 @@
-import Header from "../components/Header/Header";
+import Header from "../components/Hero/Hero";
 import Image from "next/image";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "sweeppeople -- about us",
+  description: "site under construction",
+};
 
 export default function Service() {
   return (

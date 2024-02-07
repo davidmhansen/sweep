@@ -1,6 +1,13 @@
-import Header from "../components/Header/Header";
+import Header from "../components/Hero/Hero";
 
-export default function Service() {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "sweeppeople -- contact",
+  description: "site under construction",
+};
+
+export default function Contact() {
   return (
     <div>
       <Header title="Create with us" />
