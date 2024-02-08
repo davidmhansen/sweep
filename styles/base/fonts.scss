@@ -1,14 +1,5 @@
   @font-face {
     font-family: $font-neue-montreal;
-    src: url('../../fonts/neue-montreal-regular.woff2') format('woff2'),
-        url('../../fonts/neue-montreal-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: $font-neue-montreal;
     src: url('../../fonts/neue-montreal-medium.woff2') format('woff2'),
         url('../../fonts/neue-montreal-medium.woff') format('woff');
     font-weight: 500;

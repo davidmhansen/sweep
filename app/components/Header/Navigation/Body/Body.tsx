@@ -7,13 +7,15 @@ interface BodyProps {
   links: { title: string; href: string }[];
   selectedLink: { isActive: boolean; index: number };
   setSelectedLink: (value: { isActive: boolean; index: number }) => void;
+  // setIsActive: (value: { isActive: boolean }) => void;
 }
 
 export default function Body({
   links,
   selectedLink,
   setSelectedLink,
-}: BodyProps) {
+}: // setIsActive,
+BodyProps) {
   const getChars = (word: string) => {
     let chars: JSX.Element[] = [];
     word.split("").forEach((char, i) => {

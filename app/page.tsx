@@ -14,12 +14,12 @@ export default function Home() {
           Human Stories.<br></br>Superhuman brands.
         </h1>
         <p className="homepage__subtitle">
-          We are an audio / visual creative agency, specialising in brand
-          appearance, event management and other cool stuff based near munich.
+          We are a creative agency, specialising in brand appearance, event
+          management and other cool stuff based near munich.
         </p>
         <div className="homepage__image-wrapper">
           <Image
-            src="/images/homepage-header.jpg"
+            src="/images/compressed-header-green.jpg"
             width={0}
             height={0}
             sizes="100vw"
@@ -96,7 +96,7 @@ export default function Home() {
       <section>
         <div className="homepage__image--align-left">
           <Image
-            src="/images/homepage-hollistic-approach.jpg"
+            src="/images/compressed.jpg"
             width={0}
             height={0}
             sizes="100vw"

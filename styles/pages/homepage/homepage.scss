@@ -12,10 +12,14 @@
         .homepage__title {
             @extend %title-148;
 
+            @include media ('<phone') {
+                margin-bottom: 6.4rem;
+            }
         }
 
         .homepage__subtitle {
             @extend %subtitle-18;
+            color: $color-light-gray;
             max-width: 50vw;
             margin-bottom: 9.6rem;
 
@@ -36,12 +40,24 @@
         align-items: flex-start;
         padding-left: 14.2rem;
 
+        @include media ('<phone') {
+            padding-left: 0;
+            margin-bottom: 12.8rem;
+            flex-direction: column;
+            gap: 3.2rem;
+        }
+
         .homepage__section-wrapper {
 
             display: flex;
             flex-direction: column;
             gap: 12.8rem;
             width: 56.6rem;
+
+            @include media ('<phone') {
+                max-width: 100%;
+                gap: 6.4rem;
+            }
 
             .homepage__section {
                 display: flex;
@@ -68,6 +84,11 @@
             flex: row;
             gap: 14rem;
 
+            @include media ('<phone') {
+                flex-direction: column;
+                gap: 3.2rem;
+            }
+
             .homepage__content-title {
                 width: 96rem;
                 @extend %paragraph-16;
@@ -85,6 +106,11 @@
     .homepage__section-image--wrapper {
         width: 56.6rem;
         margin-bottom: 12.4rem;
+
+        @include media ('<phone') {
+            width: 100%;
+            margin-bottom: 0;
+        }
     }
 
     .homepage__section--2 {
@@ -97,10 +123,18 @@
             gap: 6.4rem;
             padding: 0 26rem;
 
+            @include media ('<phone') {
+                padding: 0;
+                gap: 3.2rem;
+            }
+
             .homepage__section-title {
                 @extend %title-32;
                 width: 56.6rem;
-                // text-transform: uppercase;
+                
+                @include media ('<phone') {
+                    width: 100%;
+                }
 
             }
 
@@ -108,6 +142,11 @@
 
                 display: flex;
                 justify-content: space-between;
+
+                @include media ('<phone') {
+                    flex-direction: column;
+                    gap: 3.2rem
+                }
 
                 .content__title {
 
@@ -120,6 +159,10 @@
                     flex-direction: column;
                     gap: 3.2rem;
                     width: 56.6rem;
+
+                    @include media ('<phone') {
+                        width: 100%;
+                    }
 
                     .subtitle {
                         @extend %paragraph-16;
@@ -140,7 +183,11 @@
     .homepage__image--align-left {
         padding-right: 26rem;
         margin-bottom: 12.8rem;
+
+        @include media ('<phone') {
+            padding-right: 0;
     }
+}
 
     .homepage__cta--bottom {
         margin-bottom: 12.8rem;
@@ -166,6 +213,10 @@
         margin-bottom: 12.8rem;
         flex-direction: column;
         gap: 6.4rem;
+
+        @include media ('<phone') {
+            width: 100%;
+        }
 
         .section-3__title {
 

@@ -27,6 +27,20 @@ a {
     color: inherit;
 }
 
+h2 {
+  @extend %title-32;
+}
+
+h3 {
+  @extend %title-24;
+  margin-bottom: 2rem;
+}
+
+h4 {
+  @extend %title-20;
+  margin-bottom: 1.25rem;
+}
+
 // LENIS
 
 html.lenis {

@@ -13,8 +13,8 @@ export default function Service() {
     <div className="about">
       <Header title="About us" />
       <p className="about__copy">
-        We are a bunch of friends with many ideas, creative mindsets and the
-        goal to bring your ideas to life.
+        We’re a german studio that builds transformative identities, brands and
+        events to bring your ideas to life.
       </p>
       <div className="about__img-wrapper">
         <Image

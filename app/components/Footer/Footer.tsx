@@ -26,26 +26,23 @@ export default function Footer() {
               <li className="footer__links-list--item">
                 <Link href="/">Home</Link>
               </li>
-              <li className="footer__links-list--item">
+              {/* <li className="footer__links-list--item">
                 <Link href="/service">Service</Link>
-              </li>
+              </li> */}
               {/* <li className="footer__links-list--item"><a href="#">Projects</a></li> */}
               <li className="footer__links-list--item">
                 <a href="/about">About</a>
               </li>
-              <li className="footer__links-list--item">
+              {/* <li className="footer__links-list--item">
                 <Link href="/contact">Contact</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="footer__links-wrapper">
             <span className="footer__links-title">Socials</span>
             <ul className="footer__links-list">
               <li className="footer__links-list--item">
-                <a href="#">Instagram</a>
-              </li>
-              <li className="footer__links-list--item">
-                <a href="#">Facebook</a>
+                <a href="https://www.instagram.com/sweep.people/">Instagram</a>
               </li>
             </ul>
           </div>
@@ -53,7 +50,7 @@ export default function Footer() {
             <span className="footer__links-title">Tickets</span>
             <ul className="footer__links-list">
               <li className="footer__links-list--item">
-                <a href="#">Eventim</a>
+                <a href="https://eventix.shop/qf8vzrqb">Eventix</a>
               </li>
             </ul>
           </div>
@@ -61,10 +58,10 @@ export default function Footer() {
             <span className="footer__links-title">Legal</span>
             <ul className="footer__links-list">
               <li className="footer__links-list--item">
-                <a href="#">Privacy Policy</a>
+                <Link href="/privacy-policy/">Privacy Policy</Link>
               </li>
               <li className="footer__links-list--item">
-                <a href="#">Terms & Conditions</a>
+                <Link href="/legal-notice/">Legal Notice</Link>
               </li>
             </ul>
           </div>

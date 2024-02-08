@@ -17,7 +17,7 @@ export default function Header() {
         <span className="navigation__logo">
           <Link href="/">sweeppeople</Link>
         </span>
-        <div
+        {/* <div
           onClick={() => {
             setIsActive(!isActive);
           }}
@@ -37,7 +37,7 @@ export default function Header() {
               Close
             </motion.p>
           </div>
-        </div>
+        </div> */}
       </div>
       <AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence>
     </nav>
