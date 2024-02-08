@@ -32,7 +32,8 @@ export default function Home() {
         <div className="homepage__section-wrapper">
           <div className="homepage__section">
             <h2 className="homepage__section-title">
-              As a digital branding agency, we do what we love with passion.
+              We are a digital branding agency and we do what we love with
+              passion.
             </h2>
             <p className="homepage__section-copy">
               We are convinced that things will only be good if you love what
@@ -106,7 +107,7 @@ export default function Home() {
         </div>
         <div className="section-3--wrapper">
           <h2 className="section-3__title">
-            It is our goal to deliver the perfect solution for you and in the
+            It's our goal to deliver the ideal solution for you. <br></br>In the
             end, it's all about the smile.
           </h2>
           <p className="section-3__copy">
@@ -131,7 +132,10 @@ export default function Home() {
             alt="Picture of the author"
             style={{ width: "100%", height: "auto" }}
           />
-          <span className="homepage__cta-copy">OUR WORKS</span>
+          <div className="homepage__cta-wrapper">
+            <span className="homepage__cta-copy">OUR WORKS</span>
+            <span className="homepage__cta-info">coming soon</span>
+          </div>
         </div>
       </section>
     </div>

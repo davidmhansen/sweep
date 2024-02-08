@@ -193,16 +193,30 @@
         margin-bottom: 12.8rem;
         position: relative;
 
+        .homepage__cta-wrapper {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
         .homepage__cta-copy {
             cursor: default;
             text-align: center;
             @extend %title-148;
             color: white;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
         }
+
+        .homepage__cta-info {
+            cursor: default;
+            text-align: center;
+            @extend %title-32;
+            color: white;
+        }
+        
     }
 
     .section-3--wrapper {
