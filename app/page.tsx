@@ -2,7 +2,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "sweeppeople -- homepage",
+  title: "sweeppeople -- full service marketing and event management agency",
   description: "site under construction",
 };
 
