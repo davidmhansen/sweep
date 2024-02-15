@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { blur, translate } from "../../anim";
 import styles from "./style.module.scss";
+import { constants } from "buffer";
+import { useContext } from "react";
+import { headerContext } from "../../Header";
 
 interface BodyProps {
   links: { title: string; href: string }[];
@@ -16,6 +19,8 @@ export default function Body({
   setSelectedLink,
 }: // setIsActive,
 BodyProps) {
+  const { setIsActive } = useContext(headerContext);
+
   const getChars = (word: string) => {
     let chars: JSX.Element[] = [];
     word.split("").forEach((char, i) => {
@@ -47,6 +52,9 @@ BodyProps) {
               }}
               onMouseLeave={() => {
                 setSelectedLink({ isActive: false, index });
+              }}
+              onClick={() => {
+                setIsActive(false);
               }}
               variants={blur}
               animate={
